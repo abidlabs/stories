@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bedtime Stories for My Child</title>
+    <title>Islamic Stories for Kids</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Bedtime Stories</h1>
+            <h1>Mustafa Stories</h1>
         </header>
         
         <main>
@@ -21,7 +21,7 @@
             </div>
             
             <div class="story-list">
-                <h3>My Stories</h3>
+                <h3>Playlist</h3>
                 <ul id="stories">
                     <!-- Stories will be loaded here via JavaScript -->
                 </ul>
@@ -30,14 +30,23 @@
         
         <footer>
             <div class="audio-player">
-                <div class="timeline">
-                    <div class="progress"></div>
+                <div class="player-left">
+                    <div class="timeline-container">
+                        <div class="time-display">
+                            <span id="current-time">00:00</span> / <span id="total-time">00:00</span>
+                        </div>
+                        <div class="timeline">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="controls">
-                    <button id="prev" class="control-button"><i class="fas fa-step-backward"></i></button>
-                    <button id="play-pause" class="control-button"><i class="fas fa-play"></i></button>
-                    <button id="next" class="control-button"><i class="fas fa-step-forward"></i></button>
-                    <div class="speed-control">
+                <div class="player-right">
+                    <div class="playback-controls">
+                        <button id="prev" class="control-button"><i class="fas fa-step-backward"></i></button>
+                        <button id="play-pause" class="control-button"><i class="fas fa-play"></i></button>
+                        <button id="next" class="control-button"><i class="fas fa-step-forward"></i></button>
+                    </div>
+                    <!-- <div class="speed-control">
                         <label for="playback-speed">Speed:</label>
                         <select id="playback-speed">
                             <option value="0.5">0.5x</option>
@@ -47,14 +56,11 @@
                             <option value="1.5">1.5x</option>
                             <option value="2">2x</option>
                         </select>
-                    </div>
-                    <div class="volume-control">
+                    </div> -->
+                    <!-- <div class="volume-control">
                         <i class="fas fa-volume-up"></i>
                         <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
-                    </div>
-                </div>
-                <div class="time-display">
-                    <span id="current-time">00:00</span> / <span id="total-time">00:00</span>
+                    </div> -->
                 </div>
             </div>
         </footer>
