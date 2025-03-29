@@ -360,9 +360,6 @@ input[type="range"]::-moz-range-thumb {
         display: none;
     }
     
-    .timeline-container {
-        max-width: 60%;
-    }
     
     .playback-controls {
         margin-right: 5px;
